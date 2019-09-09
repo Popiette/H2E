@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 namespace hydroger.data
 {
 
-    //Classe qui s'occupe de la sauvegarde et du chargement des données du fichier de sauvegarde
+    // Save and load data from save files.
     public static class SaveSystem
     {
         public static void Save(Data data)

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace hydroger.data
 {
 
-    //Donnees du jeu (chargé au demarrage depuis le fichier data.hr)
+    // Game data (loaded at start from data.hr file)
     public class Data : MonoBehaviour
     {
 

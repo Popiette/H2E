@@ -5,7 +5,7 @@ using UnityEngine;
 namespace hydroger.data
 {
 
-    //Classe serialisable pour la sauvegarde des données
+    // Serializable class for data saving.
     [System.Serializable]
     public class GameData
     {

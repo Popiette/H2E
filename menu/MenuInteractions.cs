@@ -7,30 +7,33 @@ using UnityEngine.SceneManagement;
 namespace hydroger.menu
 {
 
-    //Effectue differentes actions en fonction du bouton sur lequel on clique dans le menu
+    // Actions that can be triggered by using menu options.
     public class MenuInteractions : MonoBehaviour
     {
 
         public void NouvellePartie()
         {
-            SceneManager.LoadScene(0); //il faudra remplacer le 0 par l'indice du niveau 1 (!!!faire le remplacement lorsque les scenes existeront!!!)
+            // Replace 0 by level ID (to do when scenes will exists)
+            SceneManager.LoadScene(0);
         }
 
         public void Continuer()
         {
-            SceneManager.LoadScene(0); //il faudra remplacer par la variable currentLevel de l'objet data (!!!faire le remplacement lorsque les scenes existeront!!!)
+            // TODO: replace hardcoded value by currentLevel variable.
+            // (when the scenes will exists)
+            SceneManager.LoadScene(0);
         }
 
 
         public void ChoixduNiveau()
         {
-            //Il faudra changer les niveaux selectionnable en fonction du niveau max
+            // TODO: change selectable levels according to max level.
         }
 
 
         public void Options()
         {
-            //Rien a faire pour l'instant
+            // TODO: Implement options.
         }
 
 

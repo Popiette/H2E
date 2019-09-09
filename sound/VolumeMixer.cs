@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 namespace hydroger.sound
 {
 
-    //Permet de changer le volume du mixer a partir des slider du menu options
+    // Change sound volume with sliders of options menu.
     public class VolumeMixer : MonoBehaviour
     {
 

@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-
-//Permet de changer le volume du mixer a partir des slider du menu options
-public class VolumeMixer : MonoBehaviour
+namespace hydroger.sound
 {
 
-    public AudioMixer mixer;
-    public string mixername;
-
-    public void SetVolume(float sliderValue)
+    //Permet de changer le volume du mixer a partir des slider du menu options
+    public class VolumeMixer : MonoBehaviour
     {
-        mixer.SetFloat(mixername, Mathf.Log10(sliderValue) * 20);
+
+        public AudioMixer mixer;
+        public string mixername;
+
+        public void SetVolume(float sliderValue)
+        {
+            mixer.SetFloat(mixername, Mathf.Log10(sliderValue) * 20);
+        }
     }
+
 }

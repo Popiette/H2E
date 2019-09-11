@@ -13,14 +13,25 @@ namespace hydroger.data
         public int maxLevel = 1;
         public float soundVolume = 0.5f;
         public float musicVolume = 0.5f;
+        public Slider soundSliderVolume;
+        public Slider musicSliderVolume;
 
         void Start()
         {
             Load();
+            soundSliderVolume.value = soundVolume;
+            musicSliderVolume.value = musicVolume;
+        }
+
+        public void UpdateVolume()
+        {
+            soundVolume = soundSliderVolume.value;
+            musicVolume = musicSliderVolume.value;
         }
 
         public void Save()
         {
+            UpdateVolume();
             SaveSystem.Save(this);
         }
 
